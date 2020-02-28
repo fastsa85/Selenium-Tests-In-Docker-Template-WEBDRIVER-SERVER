@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+    seleniumchromedriver:
+        image: robcherry/docker-chromedriver
+        ports: 
+            - "4444:4444"
+        restart: on-failure            
+        shm_size: 1G            
+        environment:
+            - CHROMEDRIVER_WHITELISTED_IPS=''
+    uitests:
+        image: uitests
+        build:
+            context: .
+            dockerfile: dockerfile    
+        entrypoint:
+            - dotnet
+            - test
+            - "UITests.csproj"
