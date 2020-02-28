@@ -18,6 +18,6 @@ NOTE: Make sure you have the following docker configuration on your machine in f
 ```
 By deafault, look for daemon.json file in:\
 /etc/docker/daemon.json for Linux machine\
-C:\ProgramData\Docker\config\daemon.json for Windows machine\
+C:\ProgramData\Docker\config\daemon.json for Windows machine
 
 (see also https://fuzzyblog.io/blog/docker/2017/09/30/using-chrome-driver-with-docker-rails-and-selenium-on-aws.html for additionals details)
