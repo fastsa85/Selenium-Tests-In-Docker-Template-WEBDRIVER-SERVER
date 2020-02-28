@@ -16,7 +16,8 @@ NOTE: Make sure you have the following docker configuration on your machine in f
   }
 }
 ```
-By deafault, look for daemon.json file in: 
+By deafault, look for daemon.json file in:
+
 /etc/docker/daemon.json for Linux machine 
 C:\ProgramData\Docker\config\daemon.json for Windows machine 
 
